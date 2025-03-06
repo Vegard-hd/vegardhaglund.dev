@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(s(join("../", "dist")));
 
 // Send the main HTML file for any other requests
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(join("../", "dist", "index.html"));
 });
 
