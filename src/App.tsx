@@ -1,8 +1,6 @@
-import { useState } from "react";
-
 import "./App.css";
 import Footer from "./components/footer";
-import Title from "./components/Title";
+import Title from "./components/title";
 function App() {
   // const [count, setCount] = useState(22);
 
