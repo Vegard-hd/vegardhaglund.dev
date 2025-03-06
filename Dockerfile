@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expose the port the app runs on
-EXPOSE 3100
+EXPOSE 3001
 
 # Start the application using server.js
-CMD ["node", "server.cjs"]
+CMD ["node", "server.js"]
