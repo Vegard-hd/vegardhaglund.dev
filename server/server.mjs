@@ -10,7 +10,7 @@ app.use(s(join(__dirname, "../", "dist")));
 
 // Send the main HTML file for any other requests
 app.get("*", (req, res) => {
-  res.sendFile(join("../", "dist", "index.html"));
+  res.sendFile(join("__dirname", "dist", "index.html"));
 });
 
 app.listen(port, () => {
