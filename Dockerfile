@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3001
 
 # Start the application using server.js
-CMD ["node", "server.js"]
+CMD ["node", "server/server.mjs"]
