@@ -1,14 +1,15 @@
-// import Footer from "./components/footer";
-import Title from "./components/title";
+import { useState } from "react";
+
+import { Title } from "./components/title";
+
+import "./App.css";
 
 function App() {
-  // const [count, setCount] = useState(22);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <section className="flex justify-center">
-        <Title></Title>
-      </section>
+      <Title></Title>
     </>
   );
 }
