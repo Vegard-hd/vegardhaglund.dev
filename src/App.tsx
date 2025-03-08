@@ -1,8 +1,9 @@
 import { useState } from "react";
 
-import { Title } from "./components/title";
+import { Title } from "./components/Title";
 import { Hero } from "./components/Hero";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/Footer";
+import { ThemeToggleWrapper } from "./components/ThemeToggleWrapper";
 import "./App.css";
 
 function App() {
@@ -10,9 +11,11 @@ function App() {
 
   return (
     <>
-      <Title></Title>
-      <Hero></Hero>
-      <Footer></Footer>
+      <Title />
+      <ThemeToggleWrapper />
+      <Hero />
+
+      <Footer />
     </>
   );
 }
