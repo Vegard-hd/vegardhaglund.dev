@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Title } from "./components/Title";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";

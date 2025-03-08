@@ -10,11 +10,25 @@ const pathing = join(__dirname, "../", "dist");
 console.log("pathing is .... ", pathing);
 
 // Serve static files from the dist directory
-app.use(static_(join(__dirname, "../", "dist")));
+app.use(
+  static_(join(__dirname, "../", "dist"), {
+    maxAge: 36000,
+  })
+);
+// Serve static files from the dist directory
+app.use(
+  static_(join(__dirname, "../", "public"), {
+    maxAge: 36000,
+  })
+);
 
 // Send the main HTML file for any other requests
 app.get("/", (req, res) => {
-  res.sendFile(join(__dirname, "../", "dist", "index.html"));
+  return res
+    .status(200)
+    .sendFile(join(__dirname, "../", "dist", "index.html"), {
+      maxAge: 36000,
+    });
 });
 
 // catch 404 and forward to error handler
@@ -46,5 +60,6 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(port, () => {
+  // console.log(process.env.PORT);
   console.log(`Server is running on port ${port}`);
 });
