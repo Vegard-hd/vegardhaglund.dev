@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
+      <PageTitle />
       <ThemeToggleWrapper />
       <Hero />
-
       <Footer />
     </>
   );
