@@ -1,4 +1,4 @@
-import { Title } from "./components/Title";
+// import { Title } from "./components/Title";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { ThemeToggleWrapper } from "./components/ThemeToggleWrapper";
@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      <Title></Title>
       <ThemeToggleWrapper />
       <Hero />
 
