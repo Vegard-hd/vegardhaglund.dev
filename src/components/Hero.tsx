@@ -14,7 +14,7 @@ export function Hero() {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Testing webhooks</h2>
+              <h2 className="card-title">Testing webhooks JSON edit</h2>
               <p>Click the button to watch on Jetflix app.</p>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary">Watch</button>
