@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
+    "compression": "^1.8.0",
     "daisyui": "^5.0.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

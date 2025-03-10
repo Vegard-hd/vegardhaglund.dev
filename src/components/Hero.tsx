@@ -5,7 +5,7 @@ export function Hero() {
         My Projects
       </h2>
       <div className="flex w-full flex-col items-center justify-center md:h-96 sm:h-auto mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl min-h-72">
           <div className="card card-side bg-base-300 shadow-sm ">
             <figure>
               <img
@@ -21,7 +21,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="card card-side bg-base-100 shadow-sm">
+          <div className="card card-side bg-base-300 shadow-sm ">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -36,7 +36,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="card card-side bg-base-100 shadow-sm">
+          <div className="card card-side bg-base-300 shadow-sm">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"

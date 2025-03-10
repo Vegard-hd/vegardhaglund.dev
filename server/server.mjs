@@ -2,12 +2,13 @@ import express, { static as static_ } from "express";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
+import compression from "compression";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = process.env.PORT || 3000;
 
-const pathing = join(__dirname, "../", "dist");
-console.log("pathing is .... ", pathing);
+app.use(compression({ level: 8 }));
 
 // Serve static files from the dist directory
 app.use(
@@ -24,11 +25,16 @@ app.use(
 
 // Send the main HTML file for any other requests
 app.get("/", (req, res) => {
-  return res
-    .status(200)
-    .sendFile(join(__dirname, "../", "dist", "index.html"), {
-      maxAge: 36000,
-    });
+  try {
+    return res
+      .status(200)
+      .sendFile(join(__dirname, "../", "dist", "index.html"), {
+        maxAge: 36000,
+      });
+  } catch (error) {
+    console.warn(error);
+    next(error);
+  }
 });
 
 // catch 404 and forward to error handler
