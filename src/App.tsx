@@ -1,4 +1,4 @@
-import { Title } from "./components/Title.tsx";
+import { Title } from "./components/Title";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { ThemeToggleWrapper } from "./components/ThemeToggleWrapper";
