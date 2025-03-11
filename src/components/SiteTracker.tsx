@@ -2,9 +2,8 @@ export const SiteTracker = () => {
   return (
     <>
       <iframe
-        sandbox=""
         plausible-embed
-        src="https://required.vegardhaglund.dev/vegardhaglund.dev?embed=true&theme=dark"
+        src="https://required.vegardhaglund.dev/share/vegardhaglund.dev?auth=oxuDBYPZWkWPqVQvJuH9P&embed=true&theme=light"
         loading="lazy"
         style={{ width: "1px", minWidth: "100%", height: "1600px" }}
       ></iframe>
